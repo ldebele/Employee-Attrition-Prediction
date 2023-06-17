@@ -9,7 +9,11 @@ MODEL_DIR = glob('./models/*_RF.pkl')[0]
 
 def prediction(data):
     """
-        data: dataframe  -> prediction set
+        params:
+            data: dataframe  -> input dataset
+        
+        return:
+            df_pred: dataframe  -> predicted result
     """
     
     # Load the model

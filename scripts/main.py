@@ -22,7 +22,6 @@ def info_tab(tab):
 def prediction_tab(tab):
 
     tab.write("### Prediction")
-
     tab.write("choose employee attrition file in .csv or .xlx format")
 
     ## files
@@ -44,16 +43,18 @@ def prediction_tab(tab):
         tab.write("### Results")
         tab.dataframe(pred)
 
+def header():
+    st.title("Employee Attrition Prediction")
+    tab1, tab2 = st.tabs(["## Prediction", "## Info"])
+
+    return tab1, tab2
 
 
 
-
-st.title("Employee Attrition Prediction")
-
-tab1, tab2 = st.tabs(["## Prediction", "## Info"])
-
-info_tab(tab2)
-prediction_tab(tab1)
+if __name__ == "__main__":
+    tab1, tab2 = header()
+    info_tab(tab2)
+    prediction_tab(tab1)
 
 
 
