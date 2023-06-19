@@ -17,14 +17,15 @@ TRAIN_DIR = Path("./data") / 'clean_HR_Analytics.csv'
 
 
 def info_tab(tab):
-    tab.write("#### Sample of the dataset")
-    df_train = pd.read_csv(TRAIN_DIR)
-    tab.dataframe(df_train.head(4))
+    # tab.write("#### Sample of the dataset")
+    # df_train = pd.read_csv(TRAIN_DIR)
+    # tab.dataframe(df_train.head(4))
 
-    tab.write("#### Columns")
-    for col in df_train.columns:
-        # tab.write(col)
-        tab.markdown(f"  - {col}")
+    # tab.write("#### Columns")
+    # for col in df_train.columns:
+    #     # tab.write(col)
+    #     tab.markdown(f"  - {col}")
+    pass
 
 
 def prediction_tab(tab):
