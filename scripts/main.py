@@ -1,5 +1,6 @@
+import os
 import sys
-import path
+import pathlib 
 import pandas as pd
 import streamlit as st
 
@@ -8,7 +9,8 @@ from preprocess import wrangle
 
 
 
-dir = path.Path(__file__).abspath()
+dir = pathlib.Path(__file__).abspath()
+
 sys.path.append(dir.parent.parent)
 
 

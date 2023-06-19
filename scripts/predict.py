@@ -1,11 +1,11 @@
 import sys
-import path
+import pathlib
 import joblib
 from glob import glob
 import pandas as pd
 
 
-dir = path.Path(__file__).abspath()
+dir = pathlib.Path(__file__).abspath()
 sys.path.append(dir.parent.parent)
 
 
