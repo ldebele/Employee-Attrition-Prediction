@@ -15,10 +15,10 @@ MODEL_DIR = './models/2023-06-14T12:21:27_RF.pkl'
 def prediction(data):
     """
         params:
-            data: dataframe  -> input dataset
+            data: pd.dataframe  -> input dataset
         
         return:
-            df_pred: dataframe  -> predicted result
+            df_pred: pd.dataframe  -> predicted result
     """
     
     # Load the model

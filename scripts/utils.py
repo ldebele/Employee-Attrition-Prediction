@@ -2,10 +2,10 @@ import matplotlib.pyplot as plt
 
 
 
-def group_by(data, index, values):
+def plot_groupby(data, index, values):
     """
-        parameters - 
-            data: DataFrame
+        parameters:
+            data: pd.DataFrame
             index: str
             values: str
     """

@@ -29,10 +29,10 @@ def info_tab(tab):
 def prediction_tab(tab):
 
     tab.write("### Prediction")
-    tab.write("choose employee attrition file in .csv or .xlx format")
+    tab.write("choose employee attrition file in .csv or .xlsx format")
 
     ## files
-    files = tab.file_uploader("Upload your file", type=['csv'])
+    files = tab.file_uploader("Upload your file", type=['csv', 'xlsx'])
 
     if files:
         df = pd.read_csv(files)
