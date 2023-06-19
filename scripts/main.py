@@ -9,13 +9,14 @@ from preprocess import wrangle
 
 
 
-dir = pathlib.Path(__file__).abspath()
+dir = pathlib.Path(__file__).absolute()
 
 sys.path.append(dir.parent.parent)
 
 
+
 TRAIN_DIR = './data/clean_HR_Analytics.csv'
-# TRAIN_DIR = Path("./data") / 'clean_HR_Analytics.csv'
+
 
 
 def info_tab(tab):

@@ -9,11 +9,8 @@ dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
 
-
-# MODEL_DIR = Path("./models") / "2023-06-14T12:21:27_RF.pkl"
-
-
-MODEL_DIR = glob('./models/*_RF.pkl')[0]
+# MODEL_DIR = glob('./models/*_RF.pkl')[0]
+MODEL_DIR = './models/2023-06-14T12:21:27_RF.pkl'
 
 
 def prediction(data):
