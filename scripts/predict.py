@@ -3,7 +3,7 @@ from glob import glob
 import pandas as pd
 
 
-MODEL_DIR = glob('./models/*_RF.pkl')[0]
+MODEL_DIR = glob('./*_RF.pkl')[0]
 
 
 def prediction(data):

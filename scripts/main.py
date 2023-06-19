@@ -5,7 +5,8 @@ from predict import prediction
 from preprocess import wrangle
 
 
-TRAIN_DIR = './data/clean_HR_Analytics.csv'
+# TRAIN_DIR = './data/clean_HR_Analytics.csv'
+TRAIN_DIR = './clean_HR_Analytics.csv'
 
 
 def info_tab(tab):
