@@ -6,8 +6,9 @@ import pandas as pd
 from pathlib import Path
 
 
-dir = Path(__file__).abspath()
-sys.path.append(dir.parent.parent)
+# dir = Path(__file__).abspath()
+# sys.path.append(dir.parent.parent)
+sys.path.append('../')
 
 
 # MODEL_DIR = Path("./models") / "2023-06-14T12:21:27_RF.pkl"

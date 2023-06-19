@@ -7,12 +7,13 @@ from preprocess import wrangle
 from pathlib import Path 
 
 
-dir = Path(__file__).abspath()
-sys.path.append(dir.parent.parent)
+# dir = Path(__file__).abspath()
+# sys.path.append(dir.parent.parent)
+sys.path.append('../')
 
 
-TRAIN_DIR = './data/clean_HR_Analytics.csv'
-# TRAIN_DIR = Path("./data") / 'clean_HR_Analytics.csv'
+# TRAIN_DIR = './data/clean_HR_Analytics.csv'
+TRAIN_DIR = Path("./data") / 'clean_HR_Analytics.csv'
 
 
 def info_tab(tab):
