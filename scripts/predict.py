@@ -2,8 +2,12 @@ import joblib
 from glob import glob
 import pandas as pd
 
+from pathlib import Path
 
-MODEL_DIR = glob('./*_RF.pkl')[0]
+MODEL_DIR = Path("./models") / "2023-06-14T12:21:27_RF.pkl"
+
+
+# MODEL_DIR = glob('./models/*_RF.pkl')
 
 
 def prediction(data):

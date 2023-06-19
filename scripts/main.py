@@ -3,10 +3,11 @@ import streamlit as st
 
 from predict import prediction
 from preprocess import wrangle
+from pathlib import Path 
 
 
 # TRAIN_DIR = './data/clean_HR_Analytics.csv'
-TRAIN_DIR = './clean_HR_Analytics.csv'
+TRAIN_DIR = Path("./data") / 'clean_HR_Analytics.csv'
 
 
 def info_tab(tab):
