@@ -5,7 +5,7 @@ from glob import glob
 import pandas as pd
 
 
-dir = pathlib.Path(__file__).abspath()
+dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
 
