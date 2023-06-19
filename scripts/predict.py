@@ -7,7 +7,8 @@ import pandas as pd
 dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
-MODEL_DIR = './models/2023-06-14T12:21:27_RF.pkl'
+MODEL_DIR = './models/2023-06-19T14:29:57_RF.joblib'
+
 
 
 def prediction(data):
