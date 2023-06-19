@@ -1,15 +1,12 @@
 import sys
-import pathlib
 import joblib
-from glob import glob
+import pathlib
 import pandas as pd
 
 
 dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
-
-# MODEL_DIR = glob('./models/*_RF.pkl')[0]
 MODEL_DIR = './models/2023-06-14T12:21:27_RF.pkl'
 
 
