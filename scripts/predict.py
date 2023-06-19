@@ -7,7 +7,7 @@ import pandas as pd
 dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
-MODEL_DIR = './models/2023-06-19T14:29:57_RF.joblib'
+MODEL_DIR = './models/2023-06-19T14:32:08_RF.joblib'
 
 
 
