@@ -26,6 +26,13 @@ def prediction(data):
     pred = model.predict(data)
 
     df_pred = pd.DataFrame(pred).rename({0: "Attrition"}, axis=1)
+    
+    dict = {
+        1: "Leave",
+        0: "Stay"
+    }
+
+    df_pred["Attrition"].replace(dict, inplace=True)
 
     # return the predicted
     return df_pred
