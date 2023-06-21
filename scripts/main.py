@@ -5,7 +5,7 @@ import streamlit as st
 
 from predict import prediction
 from preprocess import wrangle
-
+from utils import read_info_column
 
 
 dir = pathlib.Path(__file__).absolute()
@@ -19,10 +19,12 @@ def info_tab(tab):
     df_train = pd.read_csv(TRAIN_DIR)
     tab.dataframe(df_train.head(4))
 
-    tab.write("#### Columns")
+    employee_info = read_info_column()
+
+    tab.write("#### Columns Information")
     for col in df_train.columns:
-        # tab.write(col)
-        tab.markdown(f"  - {col}")
+
+        tab.markdown(f"  - {col}     -    {employee_info[col]}")
 
 
 
@@ -52,6 +54,9 @@ def prediction_tab(tab):
 
 def header():
     st.title("Employee Attrition Prediction")
+    st.write("The purpose of this web app is to provide accurate predictions of employee attrition\
+         within an organization by analyzing multiple employee-related features.")
+
     tab1, tab2 = st.tabs(["## Prediction", "## Info"])
 
     return tab1, tab2

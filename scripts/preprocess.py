@@ -15,6 +15,10 @@ def wrangle(data):
     low_card = (data.nunique()) == 1
     data.drop(columns=low_card[low_card].index.to_list(), inplace=True)
 
+    # Remove high-cardinality categorical features
+    # if "EmployeeNumber" in data.columns:
+        # data.drop(columns="EmployeeNumber", inplace=True)
+
     # Drop target column if it's in the dataset.
     if "Attrition" in data.columns:
         data.drop(columns="Attrition", inplace=True)
