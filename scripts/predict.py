@@ -1,5 +1,4 @@
 import sys
-import joblib
 import pathlib
 import pandas as pd
 
@@ -26,7 +25,7 @@ def prediction(data):
     pred = model.predict(data)
 
     df_pred = pd.DataFrame(pred).rename({0: "Attrition"}, axis=1)
-    
+
     dict = {
         1: "Leave",
         0: "Stay"
