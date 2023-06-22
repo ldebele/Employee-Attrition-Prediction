@@ -16,10 +16,9 @@ This data set created by IBM data scientists.
 - [Link to download the dataset](https://zenodo.org/record/4088439#.Y9Y3rtJBwUE)
 
 ## Project Structure 
-    |
+
     ├──  data
     |       └── raw    <- Raw datasets.
-    |
     ├── models      <- saved models.
     │
     ├── notebooks   <- Jupyter notebooks.
@@ -28,17 +27,12 @@ This data set created by IBM data scientists.
     │
     ├── scripts
     |       ├── main.py
-    |       |
     |       ├── predict.py
-    |       |
     |       ├── preprocess.py
-    |       |
     |       └── utils.py 
     | 
     ├── Makefile
-    │
     ├── README.md
-    │
     └── setup.py
     
       
