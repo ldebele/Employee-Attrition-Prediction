@@ -19,11 +19,11 @@ This data set created by IBM data scientists.
 
     ├──  data
     |       └── raw    <- Raw datasets.
-    ├── models      <- saved models.
+    ├── models         <- saved models.
     │
-    ├── notebooks   <- Jupyter notebooks.
+    ├── notebooks      <- Jupyter notebooks.
     │
-    ├── reports     <- Generated figures.
+    ├── reports        <- Generated figures.
     │
     ├── scripts
     |       ├── main.py
@@ -55,6 +55,13 @@ To run the web app locally, you will need the following.
 
 ## Getting Started
 ### Installation
+#### 1. Create Virtual Environment
+```
+python3 -m vevn venv
+# activate virtual environment
+source venv/bin/activate
+```
+#### 2. Clone The directory
 ```
 git clone https://github.com/ldebele/Employee-Attrition-Prediction
 cd Employee-Attrition-Prediction 
