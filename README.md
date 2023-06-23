@@ -33,45 +33,43 @@ This data set created by IBM data scientists.
     | 
     ├── Makefile
     ├── README.md
+    ├── requirements.txt
     └── setup.py
     
       
 
 ## Requirements
 To run the web app locally, you will need the following.
-- category-encoders
 - dvc
-- joblib
 - matplotlib
-- numpy
 - pandas 
-- path
-- pickleshare
 - scikit-learn
-- scipy
-- seaborn
-- statsmodels
-- xbboost
+- streamlit
+- xgboost
 
 ## Getting Started
 ### Installation
-#### 1. Create Virtual Environment
+#### Setup the Environment
+- create a virtualenv with Python 3.7 and activate it.
 ```
 python3 -m vevn venv
-# activate virtual environment
 source venv/bin/activate
 ```
-#### 2. Clone The directory
+#### 2. Clone the repository.
 ```
 git clone https://github.com/ldebele/Employee-Attrition-Prediction
 cd Employee-Attrition-Prediction 
 make install
 ```
-### Run 
+### Run
 To run the web locally
 ```
 make run
 ``` 
 
+### Web App 
+This app is Employee Attrition Prediction. It predict whether the employee is Stay or Leave the company based on some features.
+
+Deployment is done on streamlit.io - [web App](https://ldebele-employee-attrition-prediction-scriptsmain-ry3t4v.streamlit.app/)
 ## Author
 - `Lemi Debele`
