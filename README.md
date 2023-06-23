@@ -4,7 +4,6 @@
 - Overview
 - Datasets
 - Project Structure
-- Requirements
 - Getting Started
 - Author
 
@@ -20,37 +19,22 @@ This data set created by IBM data scientists.
     ├──  data
     |       └── raw    <- Raw datasets.
     ├── models         <- saved models.
-    │
     ├── notebooks      <- Jupyter notebooks.
-    │
     ├── reports        <- Generated figures.
-    │
     ├── scripts
     |       ├── main.py
     |       ├── predict.py
     |       ├── preprocess.py
     |       └── utils.py 
-    | 
     ├── Makefile
     ├── README.md
     ├── requirements.txt
     └── setup.py
     
-      
-
-## Requirements
-To run the web app locally, you will need the following.
-- dvc
-- matplotlib
-- pandas 
-- scikit-learn
-- streamlit
-- xgboost
-
 ## Getting Started
 ### Installation
 #### Setup the Environment
-- create a virtualenv with Python 3.7 and activate it.
+- create a virtualenv with Python 3.8 and activate it.
 ```
 python3 -m vevn venv
 source venv/bin/activate
@@ -66,7 +50,6 @@ To run the web locally
 ```
 make run
 ``` 
-
 ### Web App 
 This app is Employee Attrition Prediction. It predict whether the employee is Stay or Leave the company based on some features.
 
