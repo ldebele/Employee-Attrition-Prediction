@@ -6,7 +6,7 @@ import pandas as pd
 dir = pathlib.Path(__file__).absolute()
 sys.path.append(dir.parent.parent)
 
-MODEL_DIR = './models/2023-06-21T14:17:41_XGB.pkl'
+MODEL_DIR = './models/2023-06-23T13:43:35_LR.pkl'
 
 
 def prediction(data):
@@ -27,8 +27,8 @@ def prediction(data):
     df_pred = pd.DataFrame(pred).rename({0: "Attrition"}, axis=1)
 
     dict = {
-        1: "Leave",
-        0: "Stay"
+        "Yes": "Leave",
+        "No": "Stay"
     }
 
     df_pred["Attrition"].replace(dict, inplace=True)
