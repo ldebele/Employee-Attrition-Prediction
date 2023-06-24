@@ -37,9 +37,15 @@ def prediction_tab(tab):
     files = tab.file_uploader("Upload your file", type=['csv', 'xlsx'])
 
     if files:
-        df = pd.read_csv(files)
-        # Display the dataframe
-        tab.dataframe(df)
+        if files.type == 'text/csv':
+            df = pd.read_csv(files)
+            tab.dataframe(df)
+        elif files.type == 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
+            df = pd.read_excel(files)
+            tab.dataframe(df)
+        else:
+            raise ValueError("Unsupported file type. Please upload a CSV or XLSX file.")
+            
 
     submit = tab.button("Predict")
 
