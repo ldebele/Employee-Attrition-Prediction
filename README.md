@@ -1,5 +1,7 @@
 # Employee-Attrition-Prediction
 
+<img src="./demo/demo.gif">
+
 ## Table of contents
 - Overview
 - Datasets
@@ -54,6 +56,6 @@ make run
 This app is Employee Attrition Prediction. It predict whether the employee is Stay or Leave the company based on some features.
 
 Deployment is done on streamlit.io 
-- To access this app on Streamlit [web App](https://ldebele-employee-attrition-prediction-scriptsmain-ry3t4v.streamlit.app/)
+- To access this app on Streamlit [web App](https://ldebele-employeeattritionprediction.streamlit.app/)
 ## Author
 - `Lemi Debele`
