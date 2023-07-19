@@ -1,6 +1,8 @@
 # Employee-Attrition-Prediction
 
-<img src="./demo/demo.gif">
+<p align="center">
+  <img src="./demo/demo.gif" alt="Demo GIF">
+</p>
 
 ## Table of contents
 - Overview
