@@ -1,18 +1,15 @@
 # Employee-Attrition-Prediction
+The aim of this project is to provide accurate predictions of employee attrition within an organization by analyzing multiple employee-related features.
 
 <p align="center">
   <img src="./demo/demo.gif" alt="Demo GIF">
 </p>
 
 ## Table of contents
-- Overview
 - Datasets
 - Project Structure
 - Getting Started
 - Author
-
-## Overview
-The aim of this project is to provide accurate predictions of employee attrition within an organization by analyzing multiple employee-related features.
 
 ## Datasets
 This data set created by IBM data scientists.
