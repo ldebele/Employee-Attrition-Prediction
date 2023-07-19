@@ -11,6 +11,6 @@ setup(
     version="1.0",
     author="Lemi Debele",
     author_email="lemidebele@gmail.com",
-    packages=find_packages(incluse="scripts"),
+    packages=find_packages(include="scripts"),
     install_requires=requirements,
 )
