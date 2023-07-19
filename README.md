@@ -5,6 +5,7 @@ The aim of this project is to provide accurate predictions of employee attrition
   <img src="./demo/demo.gif" alt="Demo GIF">
 </p>
 
+---
 ## Table of contents
 - Datasets
 - Project Structure
