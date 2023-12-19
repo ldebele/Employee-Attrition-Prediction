@@ -7,7 +7,7 @@ pandas<2.0.0
 path==16.6.0
 pickleshare==0.7.5
 scikit-learn==0.24.2
-scipy==1.8.0
+scipy==1.10.0
 seaborn==0.11.2
 statsmodels==0.13.5
 xgboost==1.7.6
